@@ -10,7 +10,6 @@ window.geometry("1366x768")
 frame = Frame(window)
 frame.pack(side="top", expand=True, fill="both")
 window.title("DOUBLE or NOTHING")
-# window.title("Double or Nothing")
 # img = ImageTk.PhotoImage(Image.open("E:\\MY PROGRAMS\\DN bg img.jpg"))  # <-- PIL
 canv = Canvas(master=window)
 # frk = Label(frame, image=img)
@@ -74,9 +73,7 @@ def clear():
     global points
     window.attributes('-fullscreen', True)
     global hs
-    # hs = int(k)
     global rand
-    print(rand)  #:   This code of line will make the world change
     global z
     try:
         if points > hs:
@@ -97,11 +94,8 @@ def clear():
     fs.place(relx=0.99, rely=0.01, anchor=CENTER)
     label2 = Label(frame, text=f"High score: {hs}", bg='yellow', fg='black', font=('Central', 30,'bold'))
     label2.place(relx=0.5, rely=0.03, anchor=CENTER)
-    # label1 = Label(frame, text=f"Points: {points}", fg='black', bg='green',font=('Central',35, 'bold'))
-    # label1.place(relx=0.5, rely=0.7, anchor=CENTER)
 def __init__(self):
     print(hs)
-# hs = int(0)
 if __name__ == "__main__":
     rand = randint(1,100)
     label = Label(frame, text="Double or Nothing", fg='White', bg='Black', font=('Central',20, 'bold'))
